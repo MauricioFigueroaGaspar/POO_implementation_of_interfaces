@@ -19,4 +19,12 @@ public class Servidor extends DispositivoComputo implements Conectable {
     public void estadoDeConexion() {
         System.out.println("Revisando estado de conexion...");
     }
+
+    @Override
+    public void imprimirDetallesDelEquipo(){
+        System.out.println("Detalles del servidor:");
+        this.imprimirProcesador();
+        System.out.println("Reinicios: "+this.reinicios);
+    }
+
 }

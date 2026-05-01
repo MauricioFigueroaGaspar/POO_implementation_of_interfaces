@@ -30,4 +30,11 @@ public class Refrigerador extends Electrodomestico implements Encendible, Conect
     public void estadoDeConexion() {
         System.out.println("Revisando estado de conexion del refrigerador...");
     }
+
+    @Override 
+    public void prepararElectrodomestico(){
+        this.encender();
+        this.enfriar();
+    }
+
 }

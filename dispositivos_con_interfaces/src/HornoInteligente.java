@@ -20,4 +20,11 @@ public class HornoInteligente extends Electrodomestico implements Conectable {
     public void estadoDeConexion() {
         System.out.println("Revisando estado de conexion del horno inteligente...");
     }
+
+    @Override 
+    public void prepararElectrodomestico(){
+        System.out.println("Ajustando la presion del gas...");
+    }
+
+
 }

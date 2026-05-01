@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "POO_implementation_of_interfaces_ffe1baf5"
+        },
+        {
+            "name": "Depurar C++ Global",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Users/sebas/Desktop/G++/x86_64-15.1.0-release-posix-seh-ucrt-rt_v12-rev0/mingw64/bin/gdb.exe",
+            "preLaunchTask": "compilar_cpp_global"
+        }
+    ]
+}

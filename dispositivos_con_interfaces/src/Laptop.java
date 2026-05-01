@@ -15,4 +15,12 @@ public class Laptop extends DispositivoComputo implements Encendible {
     public void apagar() {
         System.out.println("Apagando laptop...");
     }
+
+    @Override
+    public void imprimirDetallesDelEquipo(){
+        System.out.println("Detalles de la laptop:");
+        this.imprimirProcesador();
+        System.out.println("Bateria: "+this.bateria+"%");
+        
+    }
 }

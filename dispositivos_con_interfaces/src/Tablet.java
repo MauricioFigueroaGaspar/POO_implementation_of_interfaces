@@ -30,4 +30,11 @@ public class Tablet extends DispositivoComputo implements Encendible, Conectable
     public void estadoDeConexion() {
         System.out.println("Revisando estado de conexion de la tablet...");
     }
+
+    @Override
+    public void imprimirDetallesDelEquipo() {
+        System.out.println("Detalles de la tablet:");
+        this.imprimirProcesador();
+        System.out.println("Bateria: "+this.bateria+"%");
+    }   
 }

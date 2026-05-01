@@ -14,4 +14,10 @@ public class Lavadora extends Electrodomestico implements Encendible {
     public void apagar() {
         System.out.println("Intentando apagar lavadora...");
     }
+
+    @Override 
+    public void prepararElectrodomestico(){
+        System.out.println("Limpiando tina....");
+    }
+    
 }
