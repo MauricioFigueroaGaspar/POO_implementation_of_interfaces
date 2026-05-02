@@ -24,7 +24,7 @@ public class Refrigerador extends Electrodomestico implements Encendible, Conect
 
     @Override
     public void apagar() {
-        System.out.println("Refrigerador en estado de reposo...");
+        System.out.println("Apagando refrigerador...");
         this.encendido=false;
     }
 
@@ -51,7 +51,7 @@ public class Refrigerador extends Electrodomestico implements Encendible, Conect
     @Override
     public void estadoDeConexion() {
         System.out.println("Revisando estado de conexion del refrigerador...");
-        
+
         if(this.conexion) System.out.println("El refrigerador esta conectado a Internet.");
         else         System.out.println("El refrigerador no esta conectado a Internet.");
     }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Tablet extends DispositivoComputo implements Encendible, Conectable {
-    private int bateria = 0;
+    private int bateria = 30;
     private boolean conexion=false;
     private boolean encendido=false;
 
@@ -51,7 +51,7 @@ public class Tablet extends DispositivoComputo implements Encendible, Conectable
     @Override
     public void estadoDeConexion() {
         System.out.println("Revisando estado de conexion de la tablet...");
-        
+
         if(this.conexion) System.out.println("La tablet esta conectada a Internet.");
         else              System.out.println("La tablet no esta conectada a Internet.");
     }

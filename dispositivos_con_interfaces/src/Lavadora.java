@@ -13,8 +13,9 @@ public class Lavadora extends Electrodomestico implements Encendible {
         this.encender();
         this.estado();
         this.prepararElectrodomestico();
-        System.out.println("Se ha lavado ropa " + ++lavadas + " veces.");
+        System.out.println("Lavando...se ha lavado ropa " + ++lavadas + " veces.");
         this.apagar();
+        this.estado();
     }
 
     @Override
