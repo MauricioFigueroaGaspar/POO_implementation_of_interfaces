@@ -4,6 +4,11 @@ public abstract class DispositivoComputo {
     private String procesador="";
     private long velocidadProcesador=0;
 
+
+    public DispositivoComputo(Scanner sc){
+        pedirProcesador(sc);
+    }
+
     public void pedirProcesador(Scanner sc){
         System.out.println("Ingrese el modelo del procesador");
         this.procesador=sc.nextLine();

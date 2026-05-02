@@ -1,11 +1,39 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AppMenu {
 
-    private ArrayList<Electrodomestico> listaElectrodomesticos = new ArrayList<Electrodomestico>();
-    private ArrayList<DispositivoComputo> listaDispositivoComputo = new ArrayList<DispositivoComputo>();
+    private Electrodomestico electrodomesticos[] = new Electrodomestico[5];
+    private DispositivoComputo dispositivos[] = new DispositivoComputo[5];
     private int accion=67;
+
+    public void crearObjetos(Scanner sc){
+        for (int i =0; i<5;i++){
+            System.out.println("\nElectrodomestico "+(i+1)+":\n");
+            if (i/2==0){
+                this.electrodomesticos[i]=new Lavadora(sc);
+            }
+            else if(i/2==1){
+                this.electrodomesticos[i]=new HornoInteligente(sc);
+            }
+            else if(i/2==2){
+                this.electrodomesticos[i]=new Refrigerador(sc);
+            }
+        }
+        for (int i =0; i<5;i++){
+            System.out.println("\nDispositivo "+(i+1)+":\n");
+            if(i/2==0){
+                this.dispositivos[i]=new Tablet(sc);
+            }
+            else if(i/2==1){
+                this.dispositivos[i]=new Laptop(sc);
+            }
+            else if(i/2==2){
+                this.dispositivos[i]=new Servidor(sc);
+            }
+        }
+    }
+
+
 
     public void ejecutar(Scanner sc){
         do{

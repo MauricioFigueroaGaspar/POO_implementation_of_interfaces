@@ -5,6 +5,11 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 
         AppMenu app=new AppMenu();
+        app.crearObjetos(sc);
+        
+        
+
+
 
         app.ejecutar(sc);
     }

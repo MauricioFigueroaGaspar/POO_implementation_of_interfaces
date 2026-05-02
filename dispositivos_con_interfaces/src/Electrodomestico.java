@@ -5,6 +5,10 @@ public abstract class Electrodomestico {
 
     private String marca="";
 
+    public Electrodomestico(Scanner sc){
+        pedirInformacion(sc);
+    }
+
     public void pedirInformacion(Scanner sc){
         System.out.println("Ingrese la marca del electrodomestico");
         this.marca=sc.nextLine();
